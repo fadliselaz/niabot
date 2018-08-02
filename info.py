@@ -1,4 +1,4 @@
-print = """
+print ("""
 
     Nia Bot Version 1.1.0
     adalah sebuah aplikasi bot chatting
@@ -23,3 +23,13 @@ print = """
 
     Selamat menikmati aplikasi ini, dan support nia
     untuk menjadi lebih baik lagi.
+
+    """)
+
+while True:
+    x = input("untuk kembali tekan angka 9 / yes : ")
+
+    if x == "9" or x == "yes" or x == "Yes":
+        import niabot
+    else:
+        import niabot

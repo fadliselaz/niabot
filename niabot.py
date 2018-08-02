@@ -23,7 +23,7 @@ pilih menu dibawah ini
 while True:
     x = str.lower(input("masukan pilihan kamu: "))
     if x == "1":
-        import niaBot
+        import startNia
     elif x == "2":
         import info
     elif x == "3":
