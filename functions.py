@@ -1,3 +1,43 @@
+import time
+
+def info():
+    print ("""
+
+        Nia Bot Version 1.1.0
+        adalah sebuah aplikasi bot chatting
+        yang di buat khusus untuk para jomblo..
+
+        Kalian akan berperan sebagai jomblo,
+        dan Nia akan berperan sebagai teman gadis
+        virtual kalian yang cantik dan baik..
+
+        Nia akan menjawab semua kegelisahan dalam
+        hidup kalian..
+
+        Semoga Nia bisa menghibur kalian,
+        disaat malam minggu tiba, dan Kalian
+        hanya bisa mengelus dada memandangi
+        disekitar kalian pasangan muda mudi
+        bergandengan tangan.
+
+        Biarlah nia menemani kesendirian kalian,
+        tapi ingat jangan baper, nia hanyalah sebuah bot,
+        yang tidak selalu bisa menjawab semua masalah kalian.
+
+        Selamat menikmati aplikasi ini, dan support nia
+        untuk menjadi lebih baik lagi.
+
+        """)
+
+    while True:
+        x = input("untuk kembali tekan angka 9 / yes : ")
+        if x == "9" or x == "yes" or x == "Yes":
+            break
+        else:
+            break
+
+
+
 
 
 def peraturan():
@@ -101,6 +141,47 @@ def peraturan():
         x = str(input("untuk kembali tekan angka 9 / yes : "))
         from niabot import niabot
         if x == "9" or x == "yes" or x == "Yes":
-            break
+            niabot()
         else:
-            break
+            niabot()
+
+def startNia():
+    import random
+    import time
+    import tanyaJawab as tj
+
+    rc = random.choice
+
+    while True:
+        nb = "Nia bilang : "
+        pc = "Pakar Cinta bilang : "
+
+        print("\n")
+        x = str.lower(input("tulis sesuatu mblo..: "))
+
+        print("\n")
+        # print(x)
+        print("Nia mengetik...")
+        time.sleep(1)
+        if x in tj.listTanya1:
+            print("\n")
+            print(nb + rc(tj.jawab1))
+            print("\n")
+
+        elif x in tj.listTanya2:
+            print("\n")
+            print(nb + rc(tj.jawab2))
+            print("\n")
+
+        elif x in tj.listTanya3:
+            print("\n")
+            print(nb + rc(tj.jawab3))
+            print("\n")
+
+        else:
+            print("\n")
+            print(nb + rc(tj.niaBingung))
+            time.sleep(2)
+            print("\n")
+            print(pc + rc(tj.pc))
+            print("\n")
