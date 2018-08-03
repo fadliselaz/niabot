@@ -12,8 +12,6 @@ with open("tanyaJawab/jawabNama.txt", "r") as jn:
     jawabNama = jn.read().splitlines()
 
 
-
-
 niaBingung = ["maskudnya apa..?", "hmm.. maaf aku kurang paham..", "sorryy..?, bisa di ulangi..?", "maaf kak, ngak perhatiin tadi, bisa ulangi..?"]
 
 pc = ["""
