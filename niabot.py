@@ -3,9 +3,6 @@ import time
 from functions import *
 
 
-
-
-
 while True:
     print("""
     ====================

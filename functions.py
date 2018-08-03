@@ -1,4 +1,7 @@
 import time
+import random
+from tanyaJawab import *
+
 
 def info():
     print ("""
@@ -35,8 +38,6 @@ def info():
             break
         else:
             break
-
-
 
 
 
@@ -146,15 +147,15 @@ def peraturan():
             niabot()
 
 def startNia():
-    import random
-    import time
-    import tanyaJawab as tj
 
     rc = random.choice
+    def tambah(func):
+        func()
+        print("-----------------------")
 
     while True:
-        nb = "Nia bilang : "
-        pc = "Pakar Cinta bilang : "
+        nb = "Nia bilang : \n"
+        pakar = "Pakar Cinta bilang : "
 
         print("\n")
         x = str.lower(input("tulis sesuatu mblo..: "))
@@ -163,25 +164,24 @@ def startNia():
         # print(x)
         print("Nia mengetik...")
         time.sleep(1)
-        if x in tj.listTanya1:
+        if x in tanyaNama:
             print("\n")
-            print(nb + rc(tj.jawab1))
-            print("\n")
-
-        elif x in tj.listTanya2:
-            print("\n")
-            print(nb + rc(tj.jawab2))
+            def jw():
+                print(nb + "\n" + rc(jawabNama))
+            tambah(jw)
             print("\n")
 
-        elif x in tj.listTanya3:
+        elif x in tanyaRumah:
             print("\n")
-            print(nb + rc(tj.jawab3))
+            def jw():
+                print(nb + "\n" + rc(jawabRumah))
+            tambah(jw)
             print("\n")
 
         else:
             print("\n")
-            print(nb + rc(tj.niaBingung))
+            print(nb + rc(niaBingung))
             time.sleep(2)
             print("\n")
-            print(pc + rc(tj.pc))
+            print(pakar + rc(pc))
             print("\n")
