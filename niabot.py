@@ -32,7 +32,7 @@ while True:
         peraturan()
 
     elif x == "4":
-        import creator
+        creator()
 
     elif x == "5":
         exit()

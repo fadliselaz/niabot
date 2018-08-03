@@ -2,38 +2,47 @@ import time
 import random
 from tanyaJawab import *
 
-
 def info():
     print ("""
 
-        Nia Bot Version 1.1.0
-        adalah sebuah aplikasi bot chatting
-        yang di buat khusus untuk para jomblo..
+    Nia Bot Version 1.1.0
+    adalah sebuah aplikasi
+    bot chatting yang di buat
+    khusus untuk para jomblo..
 
-        Kalian akan berperan sebagai jomblo,
-        dan Nia akan berperan sebagai teman gadis
-        virtual kalian yang cantik dan baik..
+    Kalian akan berperan
+    sebagai jomblo, dan Nia
+    akan berperan sebagai
+    teman gadis virtual kalian
+    yang cantik dan baik..
 
-        Nia akan menjawab semua kegelisahan dalam
-        hidup kalian..
+    Nia akan menjawab semua
+    kegelisahan dalam
+    hidup kalian..
 
-        Semoga Nia bisa menghibur kalian,
-        disaat malam minggu tiba, dan Kalian
-        hanya bisa mengelus dada memandangi
-        disekitar kalian pasangan muda mudi
-        bergandengan tangan.
+    Semoga Nia bisa
+    menghibur kalian,
+    disaat malam minggu tiba,
+    dan Kalian hanya bisa
+    mengelus dada memandangi
+    disekitar kalian pasangan
+    muda mudi bergandengan tangan.
 
-        Biarlah nia menemani kesendirian kalian,
-        tapi ingat jangan baper, nia hanyalah sebuah bot,
-        yang tidak selalu bisa menjawab semua masalah kalian.
+    Biarlah nia menemani
+    kesendirian kalian,
+    tapi ingat jangan baper,
+    nia hanyalah sebuah bot,
+    yang tidak selalu bisa
+    menjawab semua masalah kalian.
 
-        Selamat menikmati aplikasi ini, dan support nia
-        untuk menjadi lebih baik lagi.
+    Selamat menikmati
+    aplikasi ini, dan support
+    nia untuk menjadi lebih baik lagi.
 
-        """)
+    """)
 
     while True:
-        x = input("untuk kembali tekan angka 9 / yes : ")
+        x = input("tekan apapun untuk kembali: ")
         if x == "9" or x == "yes" or x == "Yes":
             break
         else:
@@ -82,65 +91,79 @@ def peraturan():
         4. Nia menjawab semua pertanyaan yang
         bisa ia jawab, apabila dia tidak bisa
         menjawab, pakar cinta akan membantu
-        menerangkan kepada anda apa yang harus anda
-        lakukan.
+        menerangkan kepada anda apa yang
+        harus anda lakukan.
         """)
 
         time.sleep(2)
 
         print("""
-        5. Tulis pertanyaan yang jelas, dan tidak
-        ambigu, agar nia bisa menjawab.
+        5. Tulis pertanyaan yang jelas,
+        dan tidak ambigu,
+        agar nia bisa menjawab.
         """)
 
         time.sleep(2)
 
         print("""
-        6. Harap bersabar, karena Nia hanyalah sebuah Bot,
-        ia tidak bisa memenuhi semua keinginan anda..
+        6. Harap bersabar,
+        karena Nia hanyalah sebuah Bot,
+        ia tidak bisa memenuhi
+        semua keinginan anda..
         """)
 
         time.sleep(2)
 
         print("""
-        7. Jangan baper, apalagi sampai jatuh hati beneran
-        kepada Nia.. bahaya sob..
+        7. Jangan baper,
+        apalagi sampai jatuh hati
+        beneran kepada Nia..
+        bahaya sob..
         """)
 
         time.sleep(2)
 
         print("""
-        8. Apabila anda sudah terlajur jatuh Cinta pada Nia,
-        harap menghubungi PSIKIATER terdekat, kejombloan anda
-        sudah akut.. Bahaya untuk lingkunga sekitar.
+        8. Apabila anda sudah terlajur
+        jatuh Cinta pada Nia,
+        harap menghubungi PSIKIATER
+        terdekat, kejombloan anda
+        sudah akut..
+        Bahaya untuk lingkunga sekitar.
         """)
 
         time.sleep(2)
 
         print("""
-        9. Support terus MTID Developer Team, dalam membuat
-        innovasi tebaru.
+        9. Support terus
+        MTID Developer Team,
+        dalam membuat innovasi tebaru.
         """)
 
         time.sleep(2)
 
         print("""
-        10. Terimakasih telah mencoba Niabot, semoga kesendirian
-        anda lekas berakhir, semoga niabot bisa menjadi motivasi anda
-        untuk lekas punya pasangan NYATA..
+        10. Terimakasih
+        telah mencoba Niabot,
+        semoga kesendirian anda
+        lekas berakhir,
+        semoga niabot bisa
+        menjadi motivasi anda
+        untuk lekas punya
+        pasangan NYATA..
         """)
 
         time.sleep(2)
 
         print("""
-                    --- MTID DEVELOPER TEAM ---
+        --- MTID DEVELOPER TEAM ---
         """)
 
         time.sleep(2)
         time.sleep(2)
 
-        x = str(input("untuk kembali tekan angka 9 / yes : "))
-        from niabot import niabot
+        x = str(input("tekan apapun untuk kembali: "))
+        # from niabot import niabot
         if x == "9" or x == "yes" or x == "Yes":
             niabot()
         else:
@@ -185,3 +208,27 @@ def startNia():
             print("\n")
             print(pakar + rc(pc))
             print("\n")
+
+def creator():
+    print("""
+    ####################
+    #     M T I D      #
+    ####################
+      D E V  - T E A M
+
+        Fadli Selaz
+        Budi Wibowo
+        Tammy Suryana
+        Ijal Apoy
+
+    ingin berkontribusi?
+    silakaan git clone
+    https://github.com/fadliselaz/niabot
+    """)
+
+    x = str(input("tekan apapun untuk kembali: "))
+    # from niabot import niabot
+    if x == "9" or x == "yes" or x == "Yes":
+        import niabot
+    else:
+        import niabot
