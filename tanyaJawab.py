@@ -1,14 +1,14 @@
 
-with open("tanyaRumah.txt", "r") as tr:
+with open("tanyaJawab/tanyaRumah.txt", "r") as tr:
     tanyaRumah = tr.read().splitlines()
 
-with open("jawabRumah.txt", "r") as jr:
+with open("tanyaJawab/jawabRumah.txt", "r") as jr:
     jawabRumah = jr.read().splitlines()
 
-with open("tanyaNama.txt", "r") as tn:
+with open("tanyaJawab/tanyaNama.txt", "r") as tn:
     tanyaNama = tn.read().splitlines()
 
-with open("jawabNama.txt", "r") as jn:
+with open("tanyaJawab/jawabNama.txt", "r") as jn:
     jawabNama = jn.read().splitlines()
 
 
