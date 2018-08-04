@@ -214,12 +214,9 @@ def startNia():
             print("\n")
 
         else:
-            print("\n")
-            print(nb + rc(niaBingung))
-            time.sleep(2)
-            print("\n")
-            print(pakar + rc(pc))
-            print("\n")
+            with open("tanyaJawab/niaBingung.txt", "r") as bingung:
+                jawabBingung = bingung.read().splitlines()
+                print(nb + rc(jawabBingung))
 
 
 def creator():
