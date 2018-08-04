@@ -2,8 +2,9 @@ import time
 import random
 from tanyaJawab import *
 
+
 def info():
-    print ("""
+    print("""
 
     Nia Bot Version 1.1.0
     adalah sebuah aplikasi
@@ -49,11 +50,10 @@ def info():
             break
 
 
-
 def peraturan():
     while True:
 
-        print ("""
+        print("""
             ====================
             =  N I A  -  B O T =
             ====================
@@ -169,9 +169,11 @@ def peraturan():
         else:
             niabot()
 
+
 def startNia():
 
     rc = random.choice
+
     def tambah(func):
         func()
         print("-----------------------")
@@ -189,6 +191,7 @@ def startNia():
         time.sleep(1)
         if x in tanyaNama:
             print("\n")
+
             def jw():
                 print(nb + "\n" + rc(jawabNama))
             tambah(jw)
@@ -196,8 +199,17 @@ def startNia():
 
         elif x in tanyaRumah:
             print("\n")
+
             def jw():
                 print(nb + "\n" + rc(jawabRumah))
+            tambah(jw)
+            print("\n")
+
+        elif x in tanyaGender:
+            print("\n")
+
+            def jw():
+                print(nb + "\n" + rc(jawabGender))
             tambah(jw)
             print("\n")
 
@@ -208,6 +220,7 @@ def startNia():
             print("\n")
             print(pakar + rc(pc))
             print("\n")
+
 
 def creator():
     print("""

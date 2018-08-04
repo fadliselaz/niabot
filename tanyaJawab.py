@@ -11,8 +11,15 @@ with open("tanyaJawab/tanyaNama.txt", "r") as tn:
 with open("tanyaJawab/jawabNama.txt", "r") as jn:
     jawabNama = jn.read().splitlines()
 
+with open("tanyaJawab/tanyaGender.txt", "r") as tg:
+    tanyaGender = tg.read().splitlines()
 
-niaBingung = ["maskudnya apa..?", "hmm.. maaf aku kurang paham..", "sorryy..?, bisa di ulangi..?", "maaf kak, ngak perhatiin tadi, bisa ulangi..?"]
+with open("tanyaJawab/jawabGender.txt", "r") as jg:
+    jawabGender = jg.read().splitlines()
+
+
+niaBingung = ["maskudnya apa..?", "hmm.. maaf aku kurang paham..",
+              "sorryy..?, bisa di ulangi..?", "maaf kak, ngak perhatiin tadi, bisa ulangi..?"]
 
 pc = ["""
 mungkin kamu lupa memasukan tanda TANYA (?)
@@ -22,7 +29,7 @@ atau tanda SERU (!) diakhir PERNYATAAN kamu..
 silakan ulangi berbicara dengan nia..
 have fun..
 """,
-"""
+      """
 mungkin pertanyaan atau pernyataan kamu kurang
 bisa dimengerti oleh nia,
 ingat nia hanyalah sebuah bot yang polos dan belum

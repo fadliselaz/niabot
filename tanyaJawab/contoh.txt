@@ -1,0 +1,1 @@
+contoh masukin text kedalam file, nantinya akan di cari text ini semua.
