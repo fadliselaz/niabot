@@ -17,6 +17,9 @@ with open("tanyaJawab/tanyaGender.txt", "r") as tg:
 with open("tanyaJawab/jawabGender.txt", "r") as jg:
     jawabGender = jg.read().splitlines()
 
+with open("tanyaJawab/goodBye.txt", "r") as gb:
+    goodBye = gb.read().splitlines()
+
 
 niaBingung = ["maskudnya apa..?", "hmm.. maaf aku kurang paham..",
               "sorryy..?, bisa di ulangi..?", "maaf kak, ngak perhatiin tadi, bisa ulangi..?"]

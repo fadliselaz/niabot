@@ -165,9 +165,9 @@ def peraturan():
         x = str(input("tekan apapun untuk kembali: "))
         # from niabot import niabot
         if x == "9" or x == "yes" or x == "Yes":
-            niabot()
+            break
         else:
-            niabot()
+            break
 
 
 def startNia():
@@ -179,15 +179,15 @@ def startNia():
         print("-----------------------")
 
     while True:
-        nb = "Nia bilang : \n"
+        nb = "Nia : "
         pakar = "Pakar Cinta bilang : "
 
         print("\n")
-        x = str.lower(input("tulis sesuatu mblo..: "))
+        x = str.lower(input("kamu : "))
 
         print("\n")
         # print(x)
-        print("Nia mengetik...")
+        print("Nia mengetik... \n")
         time.sleep(1)
         if x in tanyaNama:
             print("\n")
@@ -212,6 +212,21 @@ def startNia():
                 print(nb + "\n" + rc(jawabGender))
             tambah(jw)
             print("\n")
+
+        elif x in goodBye:
+            print("\n")
+            with open("tanyaJawab/yakinKeluar.txt","r") as yk:
+                yakin = yk.read().splitlines()
+                x = input(rc(yakin) + " ya / ngak : ")
+                if x == "yes" or x == "ya":
+                    dd = open("tanyaJawab/confirmExit.txt","r")
+                    yy = dd.read().splitlines()
+                    print("\n")
+                    print(rc(yy))
+                    time.sleep(3)
+                    break
+                else:
+                    continue
 
         else:
             with open("tanyaJawab/niaBingung.txt", "r") as bingung:
@@ -240,5 +255,6 @@ def creator():
     # from niabot import niabot
     if x == "9" or x == "yes" or x == "Yes":
         import niabot
+
     else:
         import niabot
