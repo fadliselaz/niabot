@@ -19,22 +19,3 @@ with open("tanyaJawab/jawabGender.txt", "r") as jg:
 
 with open("tanyaJawab/goodBye.txt", "r") as gb:
     goodBye = gb.read().splitlines()
-
-
-niaBingung = ["maskudnya apa..?", "hmm.. maaf aku kurang paham..",
-              "sorryy..?, bisa di ulangi..?", "maaf kak, ngak perhatiin tadi, bisa ulangi..?"]
-
-pc = ["""
-mungkin kamu lupa memasukan tanda TANYA (?)
-diakhir pertanyaan kamu..
-atau tanda SERU (!) diakhir PERNYATAAN kamu..
-
-silakan ulangi berbicara dengan nia..
-have fun..
-""",
-      """
-mungkin pertanyaan atau pernyataan kamu kurang
-bisa dimengerti oleh nia,
-ingat nia hanyalah sebuah bot yang polos dan belum
-mengerti semua hal,
-silakan ungkapkan sesuatu yang mudah dimengerti"""]
